@@ -1,9 +1,9 @@
 version: 1
 directus: 9.8.0
 collections:
-  - collection: artists
+  - collection: Test
     meta:
-      collection: artists
+      collection: Test
       icon: null
       note: null
       display_template: null
@@ -23,20 +23,20 @@ collections:
       collapse: open
     schema:
       schema: public
-      name: artists
+      name: Test
       comment: null
 fields:
-  - collection: artists
+  - collection: Test
     field: id
     type: integer
     schema:
       name: id
-      table: artists
+      table: Test
       schema: public
       data_type: integer
       is_nullable: false
       generation_expression: null
-      default_value: nextval('artists_id_seq'::regclass)
+      default_value: nextval('"Test_id_seq"'::regclass)
       is_generated: false
       max_length: null
       comment: null
@@ -49,7 +49,7 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
     meta:
-      collection: artists
+      collection: Test
       field: id
       special: null
       interface: input
@@ -67,12 +67,12 @@ fields:
       group: null
       validation: null
       validation_message: null
-  - collection: artists
+  - collection: Test
     field: name
     type: string
     schema:
       name: name
-      table: artists
+      table: Test
       schema: public
       data_type: character varying
       is_nullable: true
@@ -90,7 +90,7 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
     meta:
-      collection: artists
+      collection: Test
       field: name
       special: null
       interface: input
