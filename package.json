@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "directus start",
+    "build": "npx directus bootstrap",
+    "create-snapshot": "npx directus schema snapshot --yes ./snapshot.yaml",
+    "apply-snapshot": "npx directus schema apply --yes ./snapshot.yaml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
