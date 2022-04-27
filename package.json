@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "directus start",
+    "start": "npx directus start",
     "build": "npx directus bootstrap",
     "start-doa": "npx directus schema apply --yes ./snapshot.yaml & directus start",
     "create-snapshot": "npx directus schema snapshot --yes ./snapshot.yaml",
